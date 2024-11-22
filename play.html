@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSWALA</title>
+    <link rel="stylesheet" href="play.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <img src="logo.png" alt="CS WALA Logo">
+            
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Course Details</a></li>
+                <li><a href="#">My Classes</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <button class="ask-ai-button">Ask AI</button>
+    </header>
+    <main>
+        <section class="video-section">
+            <!-- Main Video -->
+            <iframe 
+                id="main-video" 
+                src="https://www.youtube.com/embed/sG24Nx9501g?si=VI7o1aQ2SottJBiq" 
+                title="Complete C++ Bangla Free Course" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+
+            <!-- Notes Section -->
+            <textarea id="notes" placeholder="Take your notes here..."></textarea>
+        </section>
+
+        <!-- Next Video Recommendations -->
+        <aside class="recommendations">
+            <h2>Next Videos</h2>
+            <ul>
+                <li data-link="https://www.youtube.com/embed/LFjuE9zey7Y">
+                    <img src="https://img.youtube.com/vi/LFjuE9zey7Y/0.jpg" alt="Prompt Engineering For Beginners">
+                    <p>Prompt Engineering For Beginners</p>
+                </li>
+                <li data-link="https://www.youtube.com/embed/1S06LbKlKEA">
+                    <img src="https://img.youtube.com/vi/1S06LbKlKEA/0.jpg" alt="Never Download IDE | Ovi Shekh">
+                    <p>Never Download IDE | Ovi Shekh</p>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Related Courses -->
+        <section class="courses">
+            <h2>Explore Related Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="https://img.youtube.com/vi/LFjuE9zey7Y/0.jpg" alt="Prompt Engineering For Beginners">
+                    <div class="course-info">
+                        <h3>Prompt Engineering For Beginners</h3>
+                        <p>Master the basics of prompt engineering to enhance your AI experience.</p>
+                        <button onclick="playVideo('https://www.youtube.com/embed/LFjuE9zey7Y')">Watch Now</button>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.youtube.com/vi/1S06LbKlKEA/0.jpg" alt="Never Download IDE | Ovi Shekh">
+                    <div class="course-info">
+                        <h3>Never Download IDE | Ovi Shekh</h3>
+                        <p>Learn efficient coding practices without relying on heavy IDEs.</p>
+                        <button onclick="playVideo('https://www.youtube.com/embed/1S06LbKlKEA')">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h3>Office Address</h3>
+            <p>Somewhere in Smart City, Ashulia</p>
+            <p>Phone: +880-XXXX-XXXXXX</p>
+            <p>Available: Sat - Thu, 10:00 AM - 6:00 PM</p>
+        </div>
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Success</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-column social-links">
+            <a href="#">F</a>
+            <a href="#">X</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="play.js"></script>
+</body>
+</html>
